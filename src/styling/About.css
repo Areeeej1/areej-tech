@@ -1,0 +1,37 @@
+.about {
+  padding: 5% 10%;
+  background: linear-gradient(135deg, #ffffff, #f0f5ff);
+  background-size: 30px 30px;
+}
+
+.about-title {
+  font-size: 2rem;
+  color: #00a5b3;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #444;
+  text-align: justify;
+}
+
+.highlight {
+  color: #00a5b3;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-title {
+    text-align: center;
+  }
+}

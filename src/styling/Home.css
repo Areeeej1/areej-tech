@@ -1,0 +1,130 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10% 10%;
+  background: linear-gradient(135deg, #f9f9f9 0%, #eef2ff 100%);
+}
+
+.home-content {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.home-content h1 {
+  font-size: 4rem;
+  color: #4e54c8;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: 0px;
+}
+@keyframes glowPulse {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #4e54c8, 0 0 15px #00a5b3, 0 0 25px #4e54c8;
+  }
+  50% {
+    text-shadow: 0 0 20px #4e54c8, 0 0 40px #00a5b3, 0 0 60px #4e54c8;
+  }
+}
+@keyframes floatIcon {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.home-content h2 {
+  color: #00a5b3;
+  font-weight: 600;
+}
+
+.home-content p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #555;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.home-img img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: pulse 3s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(78, 84, 200, 0.4), 0 0 40px rgba(0, 255, 240, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(78, 84, 200, 0.6), 0 0 60px rgba(0, 255, 240, 0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .home-img img {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 370px) {
+  .home-content {
+    flex: 1;
+    min-width: 80px;
+    text-align: left;
+  }
+  .home {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content h2 {
+    font-size: 1.3rem;
+  }
+  .home-img img {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 215px) {
+  .home-img img {
+    width: 120px;
+    height: 120px;
+  }
+}
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #4e54c8, #00a5b3);
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(78, 84, 200, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.resume-btn:hover {
+  background: linear-gradient(135deg, #00a5b3, #4e54c8);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(78, 84, 200, 0.4);
+}

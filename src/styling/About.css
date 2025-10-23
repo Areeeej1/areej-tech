@@ -24,14 +24,25 @@
   color: #00a5b3;
   font-weight: 600;
 }
+.pageindicator {
+  margin-top: 15px;
+  color: #777;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
 
 @media (max-width: 768px) {
   .about-content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
   }
 
   .about-title {
     text-align: center;
+  }
+}
+@media (width<=215px) {
+  .about-title {
+    font-size: 1.4rem;
   }
 }

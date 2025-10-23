@@ -53,7 +53,7 @@ const Home = () => {
           <h1>Areej Malik</h1>
           <h2>{text.substring(0, subIndex)}|</h2>
           <a
-            href="https://drive.google.com/uc?export=download&id=1wk9TtnEBABP2scUPcSeYuT4SrcPOj-0V"
+            href="https://drive.google.com/uc?export=download&id=19WqGsN6lLh9Q_p1MSg8ac-hNk2knHZgq"
             download
             className="resume-btn"
           >

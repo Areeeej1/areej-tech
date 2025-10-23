@@ -3,7 +3,7 @@ import loveCalculator from "../image/loveCalculator.png";
 import loginsignup from "../image/loginsignup.png";
 import counterimg from "../image/counterimg.png";
 import githubimg from "../image/githubimg.jpg";
-import pkb from "../image/pkb.png";
+import music from "../image/music.jpg";
 import LanguageIcon from "@mui/icons-material/Language";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Box, Typography, Card, CardMedia, CardContent } from "@mui/material";
@@ -19,21 +19,29 @@ const Project = () => {
       github: "https://github.com/Areeeej1/bahria_town",
     },
     {
+      title: "Music App",
+      description:
+        "A responsive React-based music application that allows users to explore, play, and favorite songs. Integrated with APIs for real-time song data and smooth audio playback.",
+      image: music,
+      link: "https://areeeej1.github.io/music_app",
+      github: "https://github.com/Areeeej1/music-app",
+    },
+
+    {
+      title: "Login & Signup",
+      description:
+        "A modern authentication interface built with React.js, featuring responsive design and interactive form validation for smooth user experience.",
+      image: loginsignup,
+      link: "https://areeeej1.github.io/login_signup/",
+      github: "https://github.com/Areeeej1/login_signup",
+    },
+    {
       title: "Love Calculator",
       description:
         "A fun web app that calculates love percentage using React and CSS.",
       image: loveCalculator,
       link: "https://areeeej1.github.io/love-calculator",
       github: "https://github.com/Areeeej1/love-calculator",
-    },
-
-    {
-      title: "Login & Signup",
-      description:
-        "A login and signup UI built with HTML, CSS & JavaScript for user authentication screens.",
-      image: loginsignup,
-      link: "https://areeeej1.github.io/login_signup/",
-      github: "https://github.com/Areeeej1/login_signup",
     },
     {
       title: "GitHub Search Engine",
@@ -48,13 +56,6 @@ const Project = () => {
         "A simple yet interactive counter app with increment, decrement, and reset features built using React.",
       image: counterimg,
       github: "https://github.com/Areeeej1/counter",
-    },
-    {
-      title: "Pokemon Berries",
-      description:
-        "A fun Pokémon-themed app displaying different berries and their effects using the PokéAPI.",
-      image: pkb,
-      github: "https://github.com/Areeeej1/PokemonBerries",
     },
   ];
 

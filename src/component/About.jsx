@@ -5,7 +5,7 @@ import NavigateBeforeSharpIcon from "@mui/icons-material/NavigateBeforeSharp";
 const About = () => {
   const [page, setPage] = useState(1);
 
-  const handleNext = () => setPage((prev) => (prev < 3 ? prev + 1 : prev));
+  const handleNext = () => setPage((prev) => (prev < 4 ? prev + 1 : prev));
   const handlePrev = () => setPage((prev) => (prev > 1 ? prev - 1 : prev));
 
   const content = [
@@ -26,36 +26,67 @@ const About = () => {
             designing clean interfaces, writing efficient code, and delivering
             engaging digital experiences that make an impact.
           </p>
+          <br></br>
+          <br></br>
         </>
       ),
     },
     {
-      title: "Internship Experience",
+      title: "Experience",
       text: (
         <>
           <p>
-            During my internship at{" "}
+            <strong>Front-End Developer </strong> at{" "}
             <span className="highlight">
               Customer Support Center, Bahria Town
-            </span>{" "}
-            (2022), I worked as a Front-End Developer and developed a{" "}
+            </span>
+            . I developed a{" "}
             <span className="highlight">Property Verification Website</span>{" "}
-            using React.js.
+            using React.js, focusing on building an intuitive and responsive
+            user interface.
           </p>
           <p>
-            My key tasks included integrating RESTful APIs for data retrieval
-            and synchronization, ensuring a smooth and efficient user
-            experience. I collaborated with team members to enhance the design,
-            usability, and overall performance of the application.
+            Integrated RESTful APIs for dynamic data handling and
+            synchronization, ensuring a seamless user experience. Collaborated
+            with the team to enhance design, usability, and performance of the
+            application.
           </p>
           <p>
-            This internship gave me hands-on experience in applying real-world
-            React concepts and strengthened my ability to work in a professional
-            development environment.
+            This internship provided hands-on experience in real-world React
+            development and strengthened my ability to work effectively in a
+            professional environment.
           </p>
         </>
       ),
     },
+    {
+      title: "Freelancing",
+      text: (
+        <>
+          <p>
+            As a{" "}
+            <span className="highlight">Freelance Front-End Developer</span>, I
+            have completed multiple{" "}
+            <span className="highlight">university and client projects</span>,
+            building responsive and interactive web applications.
+          </p>
+          <p>
+            My work focused on developing clean user interfaces, integrating
+            APIs, and ensuring smooth performance using{" "}
+            <span className="highlight">
+              React.js, JavaScript, and Material UI
+            </span>
+            .
+          </p>
+          <p>
+            Freelancing strengthened my ability to work independently, manage
+            project timelines, and deliver high-quality results that meet client
+            expectations.
+          </p>
+        </>
+      ),
+    },
+
     {
       title: "Education & Final Year Project",
       text: (
@@ -117,21 +148,22 @@ const About = () => {
         </button>
         <button
           onClick={handleNext}
-          disabled={page === 3}
+          disabled={page === 4}
           style={{
             background: "#00a5b3",
             border: "none",
             color: "#fff",
             padding: "8px 20px",
             borderRadius: "25px",
-            cursor: page === 3 ? "not-allowed" : "pointer",
-            opacity: page === 3 ? 0.5 : 1,
+            cursor: page === 4 ? "not-allowed" : "pointer",
+            opacity: page === 4 ? 0.5 : 1,
             transition: "all 0.3s ease",
           }}
         >
           <NavigateNextSharpIcon />
         </button>
       </div>
+      <p className="pageindicator">Page {page} of 4</p>
     </section>
   );
 };
